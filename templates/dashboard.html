@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>Welcome, {{ user.name }}!</h1>
+  <h2>Your Valorant Stats:</h2>
+  <pre>{{ stats | tojson(indent=2) }}</pre>
+{% endblock %}
